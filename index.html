@@ -1,0 +1,329 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="theme-color" content="#e84e1b">
+<meta name="viewport" content="width=device-width">
+<title>Kovinka Markovic.com</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+$(document).ready(function(){
+  $('.partners').bxSlider({
+    slideWidth: 220,
+    minSlides: 2,
+    maxSlides: 6,
+    slideMargin: 25,
+	moveSlides: 1,
+	pager: false,
+	auto: true
+  });
+});
+</script>
+
+
+<script>
+  $(function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
+</script>
+
+<script>
+$(document).ready(function() {
+		
+	var respmenu 		= $('#respmenu');
+	var	menu 			= $('#nav>ul');
+
+	$(respmenu).on('click', function(e) {
+		e.preventDefault();
+		menu.slideToggle();
+	});
+	
+	$(window).resize(function(){
+		var sirina = $(window).width();
+		if(sirina > 768 && menu.is(':hidden')) {
+			menu.removeAttr('style');
+		}	
+	});
+	
+});	
+	
+
+
+</script>
+
+
+</head>
+
+<body>
+	<header id="header">
+    
+    	<div id="headerTop">
+        	<div class="wrapper">
+            	<div id="headerTopLeft">
+					<span><i class="fa fa-lg fa-phone"></i>&nbsp;&nbsp;&nbsp;061.14.61.056</span>
+					<span><i class="fa fa-lg fa-envelope-o"></i>&nbsp;&nbsp;&nbsp;kovinka.markovic@gmail.com</span>
+                </div>
+            	<div id="headerTopRight">
+                	<a href="#" target="_blank"><i class="fa fa-lg fa-facebook-square"></i></a>
+                	<a href="#" target="_blank"><i class="fa fa-lg fa-twitter-square"></i></a>
+                	<a href="#" target="_blank"><i class="fa fa-lg fa-linkedin-square"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div id="headerBottom">
+        	<div class="wrapper">
+            
+            	<div id="logo">
+                	<a href="index.html">
+                    	<img src="images/logo.jpg" alt="logo">
+                    </a>
+                </div>
+                
+                <nav id="nav">
+                	<ul>
+                    	<li><a href="about.html">Usluge</a></li>
+                    	<li><a href="products.html">Projekti</a></li>
+						<li><a href="projektovanjebaza.html">O bazama</a></li>
+						<li><a href="references.php">Portfolio</a></li>
+                    	<li><a href="news.html">Blog</a></li>
+                    	<li><a href="send_form_email.php">contact</a></li>
+                    </ul>
+                    <a href="#" id="respmenu" class="button"><i class="fa fa-lg fa-navicon"></i>&nbsp;&nbsp;&nbsp;&nbsp;Navigation</a>
+                </nav>
+            
+            </div>
+        </div>   
+    
+    </header><!-- kraj #header -->
+    
+    
+    <article id="hero" class="negative">
+    	<div class="wrapper">
+        
+        
+        	<h1>Web &amp; Database design</h1>
+            <p>Izrada sajtova po vasoj zelji</p>
+            <p>Pitate se kako do savrsenog projekta? lako, potrebno je samo da me kontaktirate.</p>
+            <p><a href="#about" class="button">Learn more &raquo;</a></p>
+        
+        </div>    
+    </article>
+    
+    
+    <section id="products">
+    	<div class="wrapper">
+        	
+            <header>
+            	<h2>Subdomens</h2>
+                <p>Svi sajtovi koji se nalaze na pod domenima su staticki i ni jedan nije radjen u Wordpress-u. Svaki sajt je radjen po najnovijim tehnologijama</p><br>
+            </header>
+		<article class="product">
+            	<span>
+                	<i class="fa fa-paper-plane"></i>
+                </span>
+                <h2>Frizerski salon</h2>
+                
+            	<p><a href="https://frizerskisalon.kovinkamarkovic.com/" class="button">Learn more &raquo;</a></p>
+            </article>
+        
+            <article class="product">
+            	<span>
+                	<i class="fa fa-star"></i>
+                </span>
+                <h2>Vesti</h2>
+                
+            	<p><a href="https://vesti.kovinkamarkovic.com/" class="button">Learn more &raquo;</a></p>
+            </article>
+            
+            <article class="product">
+            	<span>
+                	<i class="fa fa-cog"></i>
+                </span>
+                <h2>Restoran</h2>
+                
+            	<p><a href="https://restoran.kovinkamarkovic.com/" class="button">Learn more &raquo;</a></p>
+            </article>
+            
+            <article class="product">
+            	<span>
+                	<i class="fa fa-umbrella"></i>
+                </span>
+                <h2>Primer</h2>
+                
+            	<p><a href="https://promocija.kovinkamarkovic.com/" class="button">Learn more &raquo;</a></p>
+            </article>
+            
+			<article class="product">
+            	<span>
+                	<i class="fa fa-certificate"></i>
+                </span>
+                <h2>Krojacka radnja</h2>
+                
+            	<p><a href="https://krojackaradnja.kovinkamarkovic.com/" class="button">Learn more &raquo;</a></p>
+            </article>
+			
+			
+            
+        </div>    
+    </section>
+    
+    
+    
+    <article id="about" class="pozitive">
+    	<div class="wrapper">
+        
+        	<div class="back">
+                <h2>Izrada sajtova </h2>
+                <p>Postoje 4 paketa sajta za izradu</p><br>
+				<ul>
+					
+					<li>Osnovni paket</li><br>
+					<li>Srednji paket</li><br>
+					<li>Profesionalni paket</li><br>
+					<li>Online shop</li><br>
+				
+				</ul>
+                <p><a href="about.html" class="button">Learn more &raquo;</a></p>
+       		</div>
+       
+        
+    
+        
+        	<div class="back2">
+                <h2>Projektovanje baze podataka </h2>
+                <p>Dogovor za sve vrste baza</p><br>
+				<ul>
+				<li>Pravljenja 1 ili vise tabela</li>
+				<li>Povezivanje tabela</li>
+				<li>Upis podataka </li>
+				<li>Dodavanje slika</li>
+				<li>Dodavanje videa</li>
+				
+				</ul>
+                <p><a href="projektovanjebaza.html" class="button">Learn more &raquo;</a></p>
+       		</div>
+       </div>
+    </article>
+	
+       
+    
+    <section id="partner">
+    	<div class="wrapper">
+        
+        	<h2>Sta je baza podataka</h2>
+            <p>Pojam baza podataka pojavio se krajem ˇsezdesetih godina 20. veka.Ovaj pojam je oznacavao skup medjusobno povezanih podataka koji se
+			cuvaju zajedno, i medju kojima ima samo onoliko ponavljanja koliko je
+				neophodno za njihovo optimalno koriscenje pri visekorisnickom radu.</p>
+
+
+				<h2>Neke od tehnologija koje  koristim</h2>
+
+
+            <div class="tehnologije">
+				<div class="tehnologija">
+					<img alt="PHP 7" src="images/tehnologis\php.jpeg">
+					<p>PHP 7</p>
+				</div>
+				
+				
+				<div class="tehnologija">
+					<img alt="HTML 5" src="images/tehnologis\html.jpeg">
+					<p>HTML 5</p>
+				</div>
+				<div class="tehnologija">
+					<img alt="CSS 3" src="images/tehnologis\css.jpeg">
+					<p>CSS 3</p>
+				</div>
+				
+				<div class="tehnologija">
+					<img alt="MYSQl" src="images/tehnologis\mysql.jpg">
+					<p>MYSQl</p>
+				</div>
+				<div class="tehnologija">
+					<img alt="JAVA" src="images/tehnologis\java.jpg">
+					<p>JavaScript</p>
+				</div>
+			</div>	
+        </div>
+    </section>
+    
+    
+    
+    <footer id="footer" class="negative">
+    	<div class="wrapper">
+    		
+            <div class="footerBlock">
+            	<h3>Kontakt</h3>
+            	 <div class="contactInfo">
+                    <p><i class="fa fa-2x fa-phone"></i> 061.14.61.056</p>
+                     <p><a href="send_form_email.php">Kontakt forma</a></p>
+                    <p><i class="fa fa-2x fa-globe"></i>www.kovinkamarkovic.com</p>
+                    
+                </div>
+            </div>
+            <div class="footerBlock">
+            	<h3>Blog</h3>
+				<p><a href="one-article.html">Kako sam postala PHP programer 1-deo</a></p>
+            	<p><a href="phpdrugideo.html">Kako sam postala PHP programer 2-deo</a></p>
+				<p><a href="oprogramerima.html">Kako sam postala PHP programer 3-deo</a></p>
+            </div>
+            
+            <div class="footerBlockR">
+            	<img src="images/logo.jpg">
+            </div>
+            
+            
+    	</div>
+        <div class="wrapper" id="footerBottom">
+        	<a href="#top" class="button">back to top</a>
+        	<p>Copyright @ Kovinka Markovic 2019 // <a href="#">privacy</a> / <a href="#">cookie policy</a> </p>
+        
+        </div>
+    </footer>
+    
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

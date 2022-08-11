@@ -1,0 +1,46 @@
+<article class="product">
+            	<span>
+                	<i class="fa fa-paper-plane"></i>
+                </span>
+                <h2>Frizerski salon</h2>
+                <p> Sajt je radjen za salon lepote.</p>
+            	<p><a href="https://frizerskisalon.kovinkamarkovic.com/" class="button">Learn more &raquo;</a></p>
+            </article>
+        
+            <article class="product">
+            	<span>
+                	<i class="fa fa-star"></i>
+                </span>
+                <h2>Vesti</h2>
+                <p>Sajt vesti .</p>
+            	<p><a href="https://vesti.kovinkamarkovic.com/" class="button">Learn more &raquo;</a></p>
+            </article>
+            
+            <article class="product">
+            	<span>
+                	<i class="fa fa-cog"></i>
+                </span>
+                <h2>Restoran</h2>
+                <p>Sajt restoran.</p>
+            	<p><a href="https://restoran.kovinkamarkovic.com/" class="button">Learn more &raquo;</a></p>
+            </article>
+            
+            <article class="product">
+            	<span>
+                	<i class="fa fa-umbrella"></i>
+                </span>
+                <h2>Primer</h2>
+                <p>Ovaj sajt moze da posluzi za razne promocije.</p>
+            	<p><a href="https://promocija.kovinkamarkovic.com/" class="button">Learn more &raquo;</a></p>
+            </article>
+            
+			<article class="product">
+            	<span>
+                	<i class="fa fa-certificate"></i>
+                </span>
+                <h2>Krojacka radnja</h2>
+                <p>Krojacka radnja je prodaja i izrada.</p>
+            	<p><a href="https://krojackaradnja.kovinkamarkovic.com/" class="button">Learn more &raquo;</a></p>
+            </article>
+			
+			
